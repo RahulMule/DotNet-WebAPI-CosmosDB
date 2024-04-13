@@ -26,6 +26,13 @@ To run this project, you need to have .NET 8 and Azure Cosmos DB.
 The API exposes several endpoints that correspond to CRUD operations:
 
 - `POST /api/games`: Create a new game.
+  ```json
+  {
+      "GameId": "1",
+      "Name": "Call of Duty: Warzone",
+      "Description": "Call of Duty: Warzone was a free-to-play battle royale video game developed by Raven Software and Infinity Ward and published by Activision",
+      "Type": "Shooter"
+  }
 - `GET /api/games/{id}`: Get a game by ID.
 - `GET /api/games`: Get all games.
 - `DELETE /api/games/{id}`: Delete a game by ID.
